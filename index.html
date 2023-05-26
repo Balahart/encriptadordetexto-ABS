@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Montserrat:wght@100&family=News+Cycle&family=Nunito:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="js/script.js"></script>
@@ -23,24 +23,28 @@
        <div class="main-container">
             <div class="entrada-txt">
                 <textarea name="mensaje-in" class="mensaje-in" id="mensaje-in" cols="30" rows="10" required placeholder="Ingresa aquí el texto"></textarea>
+                <div class="condiciones">
+                    <p>Escribe solo letras minúsculas y sin acentos.</p>
+                </div>
+                <div class="buttons">
+                    <input type="button" value="Encriptar" class="btn-encriptar" onclick="fn_encriptar()">
+                    <input type="button" value="Desencriptar" class="btn-desencriptar" onclick="fn_desencriptar()">
+                </div>
             </div>
-            <div class="condiciones">
-                <p>Escribe solo letras minúsculas y sin acentos.</p>
-            </div>
-            <div class="buttons">
-                <input type="button" value="Encriptar" class="btn-encriptar" onclick="fn_encriptar()">
-                <input type="button" value="Desencriptar" class="btn-desencriptar" onclick="fn_desencriptar()">
-            </div>
+            
             <div class="salida-txt">
-                <img src="" alt="Imágen de búsqueda" id="lupa-busqueda">
+                <img class="busqueda" src="img/find.png" alt="">
+                <div class="mensaje-user" id="mensaje-user">
+                    <h1 class="titulo-msj">Ningún mensaje fue capturado</h1>
+                    <p class="mensaje-descripcion">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    
+                    <!--<div class="button-copy">
+                        <input type="button" value="Copiar" class="btn-copiar" onclick="fn_copiar()">
+                    </div>
+                    <textarea name="mensaje-out" class="mensaje-out" id="mensaje-out" cols="30" rows="10"></textarea>-->
+                </div>
             </div>
-            <div class="mensaje-user" id="mensaje-user">
-                <h1 class="titulo-msj">Ningún mensaje fue encontrado</h1>
-                <p class="mensaje-descripcion">Ingresa el texto que deseas encriptar o desencriptar</p>
-                <textarea name="mensaje-out" class="mensaje-out" id="mensaje-out" cols="30" rows="10"></textarea>
-                <input type="button" value="Copiar" class="btn-copiar" onclick="fn_copiar()">
-            </div>
-       </div>
+        </div>
     </main>
 
     

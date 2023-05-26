@@ -1,6 +1,11 @@
 body{
+    /*font-family: 'Caveat', cursive;
+    font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'News Cycle', sans-serif;
     font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;*/
 }
 header{
     background-color: #ffffff;
@@ -17,9 +22,208 @@ header{
     text-align: center;
     font-size: 70px;
     font-weight: bold;
-    color: rgba(25, 6, 94, 0.842);
+    color: rgba(16, 58, 110, 0.856);
 }
 .logo1{
     width: 75px;
     margin: -10px;
 }
+.main-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #f3f5fc;
+}
+.mensaje-in{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 5%;
+    top: 5%;
+    border: none;
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+    color: #010411;
+    /*background-color: #f3f5fc;*/
+}
+.mensaje-in::placeholder{
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    color: #2648c259;
+}
+.mensaje-in:focus, .mensaje-in:active{
+    border: none;
+    outline: none;
+}
+.condiciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    top: 67%;
+}
+.condiciones p{
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 900;
+    color: rgba(52, 54, 54, 0.37);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    top: 72%;
+    gap: 10px;
+}
+
+.btn-encriptar{
+    width: 25%;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(16, 59, 110);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999; 
+}
+.btn-encriptar:hover{
+    background-color:  rgb(255, 255, 255);
+    color:  rgb(16, 59, 110);
+    font-size: 28px;
+}
+.btn-encriptar:active{
+    background-color:  rgb(255, 255, 255);
+    color:  rgb(16, 59, 110);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.btn-desencriptar{
+    width: 25%;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color:rgb(16, 59, 110);
+    background-color: rgb(216, 223, 231);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999; 
+}
+.btn-desencriptar:hover{
+    background-color:   rgb(131, 138, 146);
+    color: #fff;
+    font-size: 28px;
+}
+.btn-desencriptar:active{
+    background-color:   rgb(131, 138, 146);
+    color: #fff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.salida-txt{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 20%;
+    height: 73%;
+    left: 55%;
+    top: 5%;
+    background: rgb(255, 255, 255);
+    box-shadow: 10px 10px 30px 15px rgba(0, 0, 0, 0.637);
+    border-radius: 15px;
+}
+.mensaje-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+.titulo-msj{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensaje-descripcion{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+    width: 99%;
+    padding: 2%;
+}
+
+.busqueda{
+    position: absolute;
+    width: 95%;
+    height: 50%;
+    top: 10%;
+}
+
+.button-copy{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 80%;
+    left: 29%;
+    top: 90%;
+}
+    
+.btn-copiar{
+    width: 50%;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(16, 59, 110);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999; 
+}
+.btn-copiar:hover{
+    background-color:  rgb(255, 255, 255);
+    color:  rgb(16, 59, 110);
+    font-size: 28px;
+}
+.btn-copiar:active{
+    background-color:  rgb(255, 255, 255);
+    color:  rgb(16, 59, 110);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+@media screen and (max-width:480px){
+    .main-container {
+      flex-wrap: nowrap;
+    }
+
+    div {
+      flex-basis: 33%;
+    }
+  }
