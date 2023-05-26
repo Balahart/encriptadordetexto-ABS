@@ -225,5 +225,6 @@ header{
 
     div {
       flex-basis: 33%;
+      width: 100%;
     }
   }
