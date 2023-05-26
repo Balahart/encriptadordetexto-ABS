@@ -1,0 +1,25 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    background-color: #ffffff;
+    padding: 20px 20px;
+}
+.banner{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.banner h1{
+    margin: 15px;
+    display: inline;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgba(25, 6, 94, 0.842);
+}
+.logo1{
+    width: 75px;
+    margin: -10px;
+}
