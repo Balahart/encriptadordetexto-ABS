@@ -1,13 +1,3 @@
-body{
-    font-family: 'Nunito', sans-serif;
-    /*font-family: 'Caveat', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'News Cycle', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;*/
-}
 header{
     background-color: #ffffff;
     padding: 20px 20px;
@@ -82,7 +72,6 @@ header{
     top: 72%;
     gap: 10px;
 }
-
 .btn-encriptar{
     width: 25%;
     align-items: center;
@@ -135,19 +124,18 @@ header{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
-
 .salida-txt{
     display: flex;
     justify-content: center;
     position: absolute;
     width: 20%;
-    height: 73%;
+    height: 60%;
     left: 55%;
     top: 5%;
     background: rgb(255, 255, 255);
     box-shadow: 10px 10px 30px 15px rgba(0, 0, 0, 0.637);
     border-radius: 15px;
+    
 }
 .mensaje-user{
     display: flex;
@@ -183,49 +171,80 @@ header{
     top: 10%;
 }
 
-.button-copy{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    position: absolute;
-    width: 80%;
-    left: 29%;
-    top: 90%;
-}
-    
-.btn-copiar{
-    width: 50%;
-    align-items: center;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;	
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: rgb(16, 59, 110);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999; 
-}
-.btn-copiar:hover{
-    background-color:  rgb(255, 255, 255);
-    color:  rgb(16, 59, 110);
-    font-size: 28px;
-}
-.btn-copiar:active{
-    background-color:  rgb(255, 255, 255);
-    color:  rgb(16, 59, 110);
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-@media screen and (max-width:480px){
-    .main-container {
-      flex-wrap: nowrap;
+
+
+
+@media (max-width: 57.5em){
+    header {
+        width: auto;
+        background-color: #ffffff;
     }
 
-    div {
-      flex-basis: 33%;
-      width: 100%;
+    main {
+        background: #f3f5fc; 
     }
-  }
+    .banner{
+        display:  inline;
+        position: a;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .titulo-principal{
+        position: relative;
+        width: 30%;
+        height: 50%;
+        top: 10%;
+        text-align: center;
+        left: 30%;
+    }
+    .logo1{
+        position: absolute;
+        width: 40%;
+        height: 50%;
+        top: 25%;
+    }
+
+    .mensaje-in, .condiciones{
+        width: auto;
+        position: static;
+        padding: 2px;
+        border: 5px;
+   }
+   .main-container{
+        width: auto;
+        text-align: center;
+        position: absolute;
+        padding: 2px;
+        border: 5px;
+        background: #f3f5fc;
+   }
+   .buttons{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    margin: 0 0 20px 0;
+   }
+   .btn-encriptar, .btn-desencriptar{
+    width: 80%;
+    margin: 6px;
+   }
+
+  .salida-txt, .mensaje-user, h1, p{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    padding: 10px 5px 15px 5px;
+   }
+   .busqueda  {
+    top: 0;
+    display: none;
+    visibility: hidden;
+   }
+  
+}
