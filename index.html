@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de texto - ABS</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Montserrat:wght@100&family=News+Cycle&family=Nunito:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-
     <header>
         <div class="banner">
             <img class="logo1" src="img/candado1.jpg" alt="Logo de encriptador">
             <h1 class="titulo-principal">Encriptador de Texto</h1> 
         </div>
     </header>
-
     <main>
         <div class="main-container">
             <textarea name="mensaje-in" class="mensaje-in" id="mensaje-in" cols="30" rows="10" required placeholder="Ingresa aquí el texto"></textarea>
@@ -28,20 +25,15 @@
                 <p>Escribe solo letras minúsculas y sin acentos.</p>
             </div>
             <div class="buttons">
-                <input type="button" value="Encriptar" class="btn-encriptar" onclick="fn_encriptar()">
-                <input type="button" value="Desencriptar" class="btn-desencriptar" onclick="fn_desencriptar()">
+                <input type="button" value="Encriptar" class="btn-encriptar" onclick="btnEncriptar()">
+                <input type="button" value="Desencriptar" class="btn-desencriptar" onclick="btnDesencriptar()">
             </div>
-        
-
             <div class="salida-txt">
-                <img class="busqueda" src="img/find.png" alt="">
-                <div class="mensaje-user" id="mensaje-user">
-                    <h1 class="titulo-msj">Ningún mensaje fue capturado</h1>
-                    <p class="mensaje-descripcion">Ingresa el texto que deseas encriptar o desencriptar en el cuadro</p>
+                    <textarea name="mensaje-out" class="mensaje-out" id="mensaje-out" cols="30" rows="10"></textarea>
                 </div>
             </div>
         </div>
-    </main>
-    
+    </main> 
+    <script src="js/script.js"></script>
 </body>
 </html>
